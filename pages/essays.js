@@ -3,7 +3,7 @@ import styles from "../styles/Home.module.css";
 
 const fetcher = (url) => fetch(url).then((res) => res.json());
 const Essays = () => {
-  const { data, error } = useSWR("/api/people", fetcher);
+  const { data, error } = useSWR("/api/essays", fetcher);
   if (error) return <div>Failed to load</div>;
   if (!data) return <div>Loading...</div>;
   return (

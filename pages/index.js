@@ -10,19 +10,17 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://kebra-ed.vercel.app">Kebra Education</a>
-        </h1>
+        <h1 className={styles.title}>Kebra Education</h1>
 
         <p className={styles.description}>A new vision for education</p>
 
         <div className={styles.grid}>
-          <a href="" className={styles.card}>
+          <a href="/essays" className={styles.card}>
             <h3>Essays</h3>
             <p>Read our in-depth ideas about how to reshape education</p>
           </a>
 
-          <a href="" className={styles.card}>
+          <a href="fund" className={styles.card}>
             <h3>Fund</h3>
             <p>
               Let us know if you would like to help fund this vision into
@@ -30,25 +28,24 @@ export default function Home() {
             </p>
           </a>
 
-          <a href="" className={styles.card}>
+          <a href="contribute" className={styles.card}>
             <h3>Contribute</h3>
             <p>
               Share your ideas with us and we will share them with our community
             </p>
           </a>
 
-          <a href="" className={styles.card}>
+          <a href="join" className={styles.card}>
             <h3>Join</h3>
             <p>Submit your resume to join our team</p>
           </a>
+          <p>Help fund our vision</p>
+          <p>Bitcoin address:</p>
+          <p>Ethereum address:</p>
         </div>
       </main>
 
       <footer className={styles.footer}>
-        <p>Help fund our vision</p>
-        <p>Bitcoin address:</p>
-        <p>Ethereum address:</p>
-
         <a
           href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
           target="_blank"

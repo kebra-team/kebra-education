@@ -20,13 +20,6 @@ export default function Home() {
             <p>Read our in-depth ideas about how to reshape education</p>
           </a>
 
-          <a href="fund" className={styles.card}>
-            <h3>Fund our vision</h3>
-            <p>Bitcoin address: 34DS1hPiUzRh2D9UxqFWpF93Z2pVbivf7v</p>
-            <br />
-            <p>Ethereum address: 0xb3f2d3e818e5c68b59f2c9f3c79786c0339969e7</p>
-          </a>
-
           <a href="contribute" className={styles.card}>
             <h3>Contribute</h3>
             <p>
@@ -41,6 +34,12 @@ export default function Home() {
               Click <a href="join-google-form">here</a> to submit your resume to
               join our team
             </p>
+          </a>
+          <a href="fund" className={styles.card}>
+            <h3>Fund our vision</h3>
+            <p>Bitcoin address: 34DS1hPiUzRh2D9UxqFWpF93Z2pVbivf7v</p>
+            <br />
+            <p>Ethereum address: 0xb3f2d3e818e5c68b59f2c9f3c79786c0339969e7</p>
           </a>
         </div>
       </main>

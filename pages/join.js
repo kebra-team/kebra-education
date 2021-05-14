@@ -5,13 +5,13 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Kebra Education</title>
+        <title>Join Kebra Education</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Welcome to <a href="https://kebra-ed.vercel.app">Kebra Education</a>
+          Welcome to <a href="https://kebra-ed.vercel.app">Join Kebra Education</a>
         </h1>
 
         <p className={styles.description}>A new vision for education</p>

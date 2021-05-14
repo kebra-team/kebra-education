@@ -10,7 +10,9 @@ const essays = [
     text: "This is essay 2",
   },
 ];
+
 export default (req, res) => {
   res.statusCode = 200;
   res.json({ essays });
 };
+

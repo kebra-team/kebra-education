@@ -21,27 +21,27 @@ export default function Home() {
           </a>
 
           <a href="fund" className={styles.card}>
-            <h3>Fund</h3>
-            <p>
-              Let us know if you would like to help fund this vision into
-              reality
-            </p>
+            <h3>Fund our vision</h3>
+            <p>Bitcoin address: 34DS1hPiUzRh2D9UxqFWpF93Z2pVbivf7v</p>
+            <br />
+            <p>Ethereum address: 0xb3f2d3e818e5c68b59f2c9f3c79786c0339969e7</p>
           </a>
 
           <a href="contribute" className={styles.card}>
             <h3>Contribute</h3>
             <p>
-              Share your ideas with us and we will share them with our community
+              Click <a href="contribute-google-form">here</a>here to share your
+              ideas with us and we will share them with our community
             </p>
           </a>
 
           <a href="join" className={styles.card}>
             <h3>Join</h3>
-            <p>Submit your resume to join our team</p>
+            <p>
+              Click <a href="join-google-form">here</a> to submit your resume to
+              join our team
+            </p>
           </a>
-          <p>Help fund our vision</p>
-          <p>Bitcoin address:</p>
-          <p>Ethereum address:</p>
         </div>
       </main>
 

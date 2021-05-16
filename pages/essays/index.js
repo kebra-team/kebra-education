@@ -1,5 +1,7 @@
 import useSWR from "swr";
-import styles from "../styles/Home.module.css";
+import styles from "../../styles/Home.module.css";
+import Head from "next/head";
+import Link from "next/link";
 
 const fetcher = (url) => fetch(url).then((res) => res.json());
 const Essays = () => {
@@ -13,12 +15,18 @@ const Essays = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
+        <button>
+          <Link href="/">back</Link>
+        </button>
         <h1>Essays</h1>
         <div>
-          {data.map((essay) => (
-            <a href="contribute" className={styles.card}>
+          {data.map((essay, index) => (
+            <Link
+              key={index}
+              href={`/essays/essay?title=${essay.title}&text=${essay.text}`}
+            >
               <h3>{essay.title}</h3>
-            </a>
+            </Link>
           ))}
         </div>
       </main>

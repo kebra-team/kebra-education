@@ -1,46 +1,35 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
+import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <div>
       <Head>
-        <title>Kebra Education</title>
+        <title>Kebra Ed</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>Kebra Education</h1>
+        <h1 className={styles.title}>Kebra Ed</h1>
 
         <p className={styles.description}>A new vision for education</p>
 
         <div className={styles.grid}>
-          <a href="/essays" className={styles.card}>
-            <h3>Essays</h3>
+          <div>
+            <Link href="/essays">
+              <h3>Essays</h3>
+            </Link>
             <p>Read our in-depth ideas about how to reshape education</p>
-          </a>
+          </div>
+          <div>
+            <Link href="/essays">
+              <h3>Fund our vision</h3>
+            </Link>
 
-          <a href="contribute" className={styles.card}>
-            <h3>Contribute</h3>
-            <p>
-              Click <a href="contribute-google-form">here</a>here to share your
-              ideas with us and we will share them with our community
-            </p>
-          </a>
-
-          <a href="join" className={styles.card}>
-            <h3>Join</h3>
-            <p>
-              Click <a href="join-google-form">here</a> to submit your resume to
-              join our team
-            </p>
-          </a>
-          <a href="fund" className={styles.card}>
-            <h3>Fund our vision</h3>
             <p>Bitcoin address: 34DS1hPiUzRh2D9UxqFWpF93Z2pVbivf7v</p>
-            <br />
             <p>Ethereum address: 0xb3f2d3e818e5c68b59f2c9f3c79786c0339969e7</p>
-          </a>
+          </div>
         </div>
       </main>
 

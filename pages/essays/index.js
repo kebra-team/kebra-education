@@ -19,14 +19,21 @@ const Essays = () => {
           <Link href="/">back</Link>
         </button>
         <h1>Essays</h1>
+        <p>
+          A series of short essays on the history and future of school.
+          system
+        </p>
         <div>
           {data.map((essay, index) => (
+            <>
             <Link
               key={index}
               href={`/essays/essay?title=${essay.title}&text=${essay.text}`}
             >
               <h3>{essay.title}</h3>
             </Link>
+            --------
+            </>
           ))}
         </div>
       </main>

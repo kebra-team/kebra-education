@@ -2,7 +2,7 @@ import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import Link from "next/link";
 
-export default function Home() {
+export default function Products() {
   return (
     <div>
       <Head>
@@ -11,37 +11,17 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>Kebra Education</h1>
+        <button>
+          <Link href="/">back</Link>
+        </button>
+        <h1 className={styles.title}>Products</h1>
 
         <p className={styles.description}>A new vision for education</p>
 
         <div>
           <>
-            <Link href="/products">
-              <h3>Products</h3>
-            </Link>
-            <p>Implement our products</p>
-          </>
-          <>
-            <Link href="/events">
-              <h3>Book our event</h3>
-            </Link>
-            <p>We will bring the vision to you</p>
-          </>
-          <>
-            <Link href="/essays">
-              <h3>Essays</h3>
-            </Link>
-            <p>Ideas on reshaping education</p>
-          </>
-
-          <>
-            <Link href="#">
-              <h3>Fund our vision</h3>
-            </Link>
-
-            <p>Bitcoin address: 34DS1hPiUzRh2D9UxqFWpF93Z2pVbivf7v</p>
-            <p>Ethereum address: 0xb3f2d3e818e5c68b59f2c9f3c79786c0339969e7</p>
+            <h2>Bitay</h2>
+            <p>Our best in market data collection and analysis uses AI to identify trends and address users concerns in real-time.</p>
           </>
         </div>
       </main>

@@ -14,13 +14,13 @@ const Essay = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-        <button>
-          <Link href="/essays">back</Link>
-        </button>
-        <h1>{title}</h1>
-        <div>
-          <p>{text}</p>
-        </div>
+          <button>
+            <Link href="/essays">back</Link>
+          </button>
+          <h1>{title}</h1>
+          <div>
+            <p>{text}</p>
+          </div>
       </main>
     </div>
   );
